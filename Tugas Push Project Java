@@ -1,0 +1,133 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Daffa
+ */
+public class Tugas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //If Else Condition
+        int Laptop = 10;
+        if (Laptop > 20){
+        System.out.println("Asus");
+        }
+        else if (Laptop < 20){
+            System.out.println("Lenovo");
+        }
+        else {
+            System.out.println("Kedua Nya");
+            }
+
+        //Condition 1 Line
+        int Duit = 10;
+        String Dompet = (Duit < 20) ? "Asus" : "Lenovo";
+        System.out.println(Dompet);
+     
+
+
+        //Switch Case
+        System.out.println("Pilih VRAM : ");
+        Scanner input = new Scanner(System.in);
+        String Pilih = input.nextLine();
+        
+        switch (Pilih){
+            case "2 GB":
+                System.out.println("GTX 950");
+                break;
+            case "4 GB":
+                System.out.println("GTX 980");
+                break;
+            case "8 GB":
+                System.out.println("Out Of Stock");
+                break;
+        }
+        
+        
+        
+        //If Else Condition
+        System.out.println("Laptop Gaming : ");
+        Scanner laptop = new Scanner(System.in);
+        String Laptop = laptop.nextLine();
+        
+        if (Laptop.equals("Asus")){
+                System.out.println("ROG");
+        }
+        else if (Laptop.equals("Acer")){
+                System.out.println("Predator");
+        }
+        else {
+                System.out.println("Pilihan Salah");
+        }
+
+
+
+        //Symply Task
+        System.out.println("Masukan angka : ");
+        Scanner input = new Scanner(System.in);
+        int pilihan = input.nextInt();
+        
+        if (pilihan < 10){
+                System.out.println("Under 10!");
+        }
+        else if (pilihan <= 31)){
+                System.out.println("Above 10 under 30!");
+        }
+        else{
+                System.out.println("Above 31");
+        }
+
+
+        
+        //For
+        int max = 1000000;
+        for (int i = 0;i < max; i++){
+            System.out.println(i);
+        }
+
+
+
+        //Foreach
+        int arr[] = {3,2,1,5,4};
+        
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+        String words[]={"You","Shall","Not","Pass","!!!!"};
+        
+        for (String word : words){
+            System.out.println(word);
+        }
+        
+        
+        
+        //While Do
+        int max = 100;
+        int i = 0;
+        while (i<max){
+            System.out.println("Natus Vincere");
+            i++;
+        }
+        
+        
+        
+        //Do While
+        int max = 50;
+        int x = 0;
+        do{
+            System.out.println("Migos");
+            x++;
+        }while(x<max);
+    }
+    
+}
